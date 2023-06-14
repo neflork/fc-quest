@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: wheat;
+    background-color: #454545;
+    font-size: 1.6em;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* Text Quest */
+#images {
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 1em;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#btnBox {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+/* Tic-Tac Game */
+.app {
+    width: 640px;
+    height: 480px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.activeApp {
+    display: flex;
+}
+
+.activeBody {
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.app_block {
+    border: 2px solid black;
+    width: 200px;
+    height: 130px;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.app_block.active {
+    cursor: default;
+}
+
+.app_block.active.active_o {
+    color: #e2e3e9;
+}
+
+.app_block.active.active_x {
+    color: #d53f35;
+}
